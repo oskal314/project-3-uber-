@@ -1,0 +1,924 @@
+/* line 1, ../../../../../Saits/project3/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 2, ../../../../../Saits/project3/src/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 6, ../../../../../Saits/project3/src/sass/_general.sass */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 5;
+}
+
+/* line 13, ../../../../../Saits/project3/src/sass/_general.sass */
+.hamburger {
+  display: none;
+}
+
+/* line 16, ../../../../../Saits/project3/src/sass/_general.sass */
+.hamburger {
+  display: none;
+}
+
+/* line 19, ../../../../../Saits/project3/src/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 25, ../../../../../Saits/project3/src/sass/_general.sass */
+.menu_link {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* line 29, ../../../../../Saits/project3/src/sass/_general.sass */
+.menu_link:hover {
+  text-decoration: none;
+  color: #1eacc7;
+}
+
+/* line 32, ../../../../../Saits/project3/src/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 20px;
+}
+
+/* line 35, ../../../../../Saits/project3/src/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 38, ../../../../../Saits/project3/src/sass/_general.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 44, ../../../../../Saits/project3/src/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 48, ../../../../../Saits/project3/src/sass/_general.sass */
+.subheader_official {
+  margin-top: 6px;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* line 54, ../../../../../Saits/project3/src/sass/_general.sass */
+.subheader_call {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 19px;
+  text-align: right;
+}
+
+/* line 60, ../../../../../Saits/project3/src/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 12px;
+}
+
+/* line 69, ../../../../../Saits/project3/src/sass/_general.sass */
+.subheader_phone:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 72, ../../../../../Saits/project3/src/sass/_general.sass */
+.subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* line 2, ../../../../../Saits/project3/src/sass/_mixins.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 87, ../../../../../Saits/project3/src/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 91, ../../../../../Saits/project3/src/sass/_general.sass */
+.promo_header {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 99, ../../../../../Saits/project3/src/sass/_general.sass */
+.promo_subheader {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* line 108, ../../../../../Saits/project3/src/sass/_general.sass */
+.promo_descr {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 23px;
+}
+
+/* line 115, ../../../../../Saits/project3/src/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 118px auto 0 auto;
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, ../../../../../Saits/project3/src/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 131, ../../../../../Saits/project3/src/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+/* line 133, ../../../../../Saits/project3/src/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 138, ../../../../../Saits/project3/src/sass/_general.sass */
+.reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+/* line 147, ../../../../../Saits/project3/src/sass/_general.sass */
+.reasons-descr {
+  width: 320px;
+}
+
+/* line 149, ../../../../../Saits/project3/src/sass/_general.sass */
+.reasons_subtitle {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 154, ../../../../../Saits/project3/src/sass/_general.sass */
+.reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 160, ../../../../../Saits/project3/src/sass/_general.sass */
+.label {
+  position: relative;
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 173, ../../../../../Saits/project3/src/sass/_general.sass */
+.label_white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 176, ../../../../../Saits/project3/src/sass/_general.sass */
+.label_min {
+  width: 76px;
+}
+
+/* line 179, ../../../../../Saits/project3/src/sass/_general.sass */
+.title {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 190, ../../../../../Saits/project3/src/sass/_general.sass */
+.title_white {
+  color: #fff;
+}
+
+/* line 193, ../../../../../Saits/project3/src/sass/_general.sass */
+.subtitle {
+  position: relative;
+  margin-top: 19px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 201, ../../../../../Saits/project3/src/sass/_general.sass */
+.subtitle_white {
+  color: #fff;
+}
+
+/* line 204, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+
+/* line 208, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile .row {
+  margin-top: 32px;
+}
+
+/* line 210, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 300px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+/* line 217, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/bg/mobile_screen_1.jpg") center center/cover no-repeat;
+}
+
+/* line 219, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/bg/mobile_screen_2.jpg") center center/cover no-repeat;
+}
+
+/* line 221, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/bg/mobile_screen_3.jpg") center center/cover no-repeat;
+}
+
+/* line 223, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/bg/mobile_screen_4.jpg") center center/cover no-repeat;
+}
+
+/* line 225, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/bg/mobile_screen_5.jpg") center center/cover no-repeat;
+}
+
+/* line 227, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/bg/mobile_screen_6.jpg") center center/cover no-repeat;
+}
+
+/* line 229, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile_item_subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 236, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 250, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile_item_plus:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+  transition: 0.3s all;
+}
+
+/* line 257, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile_item_plus:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 14px;
+  width: 2px;
+  background-color: #1eacc7;
+  transition: 0.3s all;
+}
+
+/* line 268, ../../../../../Saits/project3/src/sass/_general.sass */
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  background-color: #ff5656;
+}
+
+/* line 271, ../../../../../Saits/project3/src/sass/_general.sass */
+.choice {
+  position: relative;
+  min-height: 895px;
+  padding: 57px 0 138px 0;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+
+/* line 276, ../../../../../Saits/project3/src/sass/_general.sass */
+.choice_img {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 56px auto 0 auto;
+  z-index: 2;
+}
+
+/* line 282, ../../../../../Saits/project3/src/sass/_general.sass */
+.choice_descr {
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 288, ../../../../../Saits/project3/src/sass/_general.sass */
+.choice .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
+}
+
+/* line 297, ../../../../../Saits/project3/src/sass/_general.sass */
+.require {
+  padding: 68px 0 84px 0;
+}
+
+/* line 299, ../../../../../Saits/project3/src/sass/_general.sass */
+.require_block {
+  margin: 33px 0;
+}
+
+/* line 301, ../../../../../Saits/project3/src/sass/_general.sass */
+.require_block_nmb {
+  margin-bottom: 0px;
+}
+
+/* line 303, ../../../../../Saits/project3/src/sass/_general.sass */
+.require_title {
+  color: #1ca8c3;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* line 307, ../../../../../Saits/project3/src/sass/_general.sass */
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+/* line 311, ../../../../../Saits/project3/src/sass/_general.sass */
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+/* line 317, ../../../../../Saits/project3/src/sass/_general.sass */
+.require_list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check_blue.svg") center center/cover no-repeat;
+}
+
+/* line 326, ../../../../../Saits/project3/src/sass/_general.sass */
+.require_descr {
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #1ca8c3;
+}
+
+/* line 333, ../../../../../Saits/project3/src/sass/_general.sass */
+.require .warning .require_title {
+  color: #ff5656;
+}
+
+/* line 337, ../../../../../Saits/project3/src/sass/_general.sass */
+.require .warning .require_list li:before {
+  background: url("../icons/check_red.svg") center center/cover no-repeat;
+}
+
+/* line 339, ../../../../../Saits/project3/src/sass/_general.sass */
+.world {
+  position: relative;
+  min-height: 717px;
+  padding: 49px 0;
+  background: url("../img/bg/map.jpg") center center/cover no-repeat;
+}
+
+/* line 344, ../../../../../Saits/project3/src/sass/_general.sass */
+.world_link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 49px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 68px;
+  text-transform: uppercase;
+  color: #1fbad6;
+}
+
+/* line 355, ../../../../../Saits/project3/src/sass/_general.sass */
+.world_link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 358, ../../../../../Saits/project3/src/sass/_general.sass */
+footer {
+  padding: 14px 23px 39px 23px;
+}
+
+/* line 361, ../../../../../Saits/project3/src/sass/_general.sass */
+footer a:hover {
+  text-decoration: none;
+}
+
+/* line 364, ../../../../../Saits/project3/src/sass/_general.sass */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 32px;
+}
+
+/* line 369, ../../../../../Saits/project3/src/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 371, ../../../../../Saits/project3/src/sass/_general.sass */
+.footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* line 374, ../../../../../Saits/project3/src/sass/_general.sass */
+.footer_social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 378, ../../../../../Saits/project3/src/sass/_general.sass */
+.footer_social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+}
+
+/* line 387, ../../../../../Saits/project3/src/sass/_general.sass */
+.footer_social_item i {
+  color: #fff;
+}
+
+/* line 389, ../../../../../Saits/project3/src/sass/_general.sass */
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 392, ../../../../../Saits/project3/src/sass/_general.sass */
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* line 396, ../../../../../Saits/project3/src/sass/_general.sass */
+.footer_links_main a {
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 401, ../../../../../Saits/project3/src/sass/_general.sass */
+.footer_links_sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* line 405, ../../../../../Saits/project3/src/sass/_general.sass */
+.footer_links_sub a {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 410, ../../../../../Saits/project3/src/sass/_general.sass */
+.footer_links_lang {
+  display: block;
+  margin: 0 auto;
+  color: #1fbad6;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 19px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 419, ../../../../../Saits/project3/src/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, ../../../../../Saits/project3/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, ../../../../../Saits/project3/src/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, ../../../../../Saits/project3/src/sass/_media.sass */
+  .promo_header {
+    font-size: 50px;
+  }
+  /* line 11, ../../../../../Saits/project3/src/sass/_media.sass */
+  .reasons_block {
+    align-items: flex-start;
+  }
+  /* line 13, ../../../../../Saits/project3/src/sass/_media.sass */
+  .reasons-descr {
+    width: 300px;
+  }
+  /* line 16, ../../../../../Saits/project3/src/sass/_media.sass */
+  .mobile_item {
+    width: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 21, ../../../../../Saits/project3/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 8px;
+  }
+  /* line 23, ../../../../../Saits/project3/src/sass/_media.sass */
+  .menu_link {
+    font-size: 10px;
+  }
+  /* line 27, ../../../../../Saits/project3/src/sass/_media.sass */
+  .subheader_logo img {
+    width: 100%;
+  }
+  /* line 29, ../../../../../Saits/project3/src/sass/_media.sass */
+  .subheader_official {
+    font-size: 10px;
+  }
+  /* line 31, ../../../../../Saits/project3/src/sass/_media.sass */
+  .subheader_btn {
+    margin-top: 21px;
+    height: 40px;
+    width: 100%;
+  }
+  /* line 36, ../../../../../Saits/project3/src/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+  }
+  /* line 38, ../../../../../Saits/project3/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 30px;
+  }
+  /* line 41, ../../../../../Saits/project3/src/sass/_media.sass */
+  .reasons_block {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 44, ../../../../../Saits/project3/src/sass/_media.sass */
+  .reasons-descr {
+    margin-top: 20px;
+  }
+  /* line 46, ../../../../../Saits/project3/src/sass/_media.sass */
+  .reasons h2.title {
+    font-size: 35px;
+  }
+  /* line 48, ../../../../../Saits/project3/src/sass/_media.sass */
+  .reasons_round {
+    margin-right: 0;
+  }
+  /* line 51, ../../../../../Saits/project3/src/sass/_media.sass */
+  .footer_mobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-right: 100px;
+  }
+  /* line 57, ../../../../../Saits/project3/src/sass/_media.sass */
+  .footer_mobile a img {
+    width: 100%;
+    height: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 62, ../../../../../Saits/project3/src/sass/_media.sass */
+  .menu {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: #0a0808b6;
+    transition: 0.6s all;
+  }
+  /* line 74, ../../../../../Saits/project3/src/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 76, ../../../../../Saits/project3/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px 0;
+  }
+  /* line 80, ../../../../../Saits/project3/src/sass/_media.sass */
+  .menu_link {
+    font-size: 20px;
+  }
+  /* line 82, ../../../../../Saits/project3/src/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 12px;
+  }
+  /* line 90, ../../../../../Saits/project3/src/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  /* line 98, ../../../../../Saits/project3/src/sass/_media.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 100, ../../../../../Saits/project3/src/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 102, ../../../../../Saits/project3/src/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 104, ../../../../../Saits/project3/src/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 106, ../../../../../Saits/project3/src/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 108, ../../../../../Saits/project3/src/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+  /* line 111, ../../../../../Saits/project3/src/sass/_media.sass */
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    color: #fffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* line 119, ../../../../../Saits/project3/src/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    widows: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  /* line 126, ../../../../../Saits/project3/src/sass/_media.sass */
+  .promo_header {
+    line-height: 45px;
+    padding: 93px 0 35px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 132, ../../../../../Saits/project3/src/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 3px;
+  }
+  /* line 134, ../../../../../Saits/project3/src/sass/_media.sass */
+  .subheader_phone {
+    margin-top: 11px;
+  }
+  /* line 136, ../../../../../Saits/project3/src/sass/_media.sass */
+  .subheader_btn {
+    font-size: 10px;
+    margin-top: 9px;
+  }
+  /* line 139, ../../../../../Saits/project3/src/sass/_media.sass */
+  .promo {
+    min-height: 400px;
+  }
+  /* line 141, ../../../../../Saits/project3/src/sass/_media.sass */
+  .promo_descr {
+    display: none;
+  }
+  /* line 143, ../../../../../Saits/project3/src/sass/_media.sass */
+  .promo_header {
+    font-size: 30px;
+    padding: 0 22px;
+    line-height: 35px;
+  }
+  /* line 147, ../../../../../Saits/project3/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 20px;
+    margin-top: 33px;
+    line-height: 25px;
+    line-height: 30px;
+    padding: 0 9px;
+  }
+  /* line 153, ../../../../../Saits/project3/src/sass/_media.sass */
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+  }
+  /* line 157, ../../../../../Saits/project3/src/sass/_media.sass */
+  .menu {
+    width: 85%;
+  }
+  /* line 159, ../../../../../Saits/project3/src/sass/_media.sass */
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+  /* line 163, ../../../../../Saits/project3/src/sass/_media.sass */
+  .menu_link {
+    display: block;
+  }
+  /* line 165, ../../../../../Saits/project3/src/sass/_media.sass */
+  .reasons {
+    padding: 22px 0 36px 0;
+  }
+  /* line 167, ../../../../../Saits/project3/src/sass/_media.sass */
+  .reasons h2.title {
+    font-size: 15px;
+    margin-top: 15px;
+    line-height: 15px;
+  }
+  /* line 171, ../../../../../Saits/project3/src/sass/_media.sass */
+  .reasons_block {
+    margin-top: 26px;
+  }
+  /* line 173, ../../../../../Saits/project3/src/sass/_media.sass */
+  .reasons_round {
+    width: 100px;
+    height: 100px;
+  }
+  /* line 176, ../../../../../Saits/project3/src/sass/_media.sass */
+  .reasons_descr {
+    width: 100%;
+    margin-top: 27px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
